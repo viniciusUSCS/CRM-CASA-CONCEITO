@@ -1,0 +1,22 @@
+tela menu admin - https://tela-menu-admin.netlify.app/
+tela feedback - https://tela-feedback-admin.netlify.app/
+tela clientes- https://tela-clientes-admin.netlify.app/
+tela cadastro funcionario- https://tela-cadastro-funcionario-admin.netlify.app/
+tela cadastro empreendimento https://tela-cadastro-empreendimento-admin.netlify.app/
+tela cadastro cliente https://tela-cadastro-cliente-admin.netlify.app/
+tela agenda https://tela-agenda-admin.netlify.app/
+tela intranet admin https://tela-intranet-admin.netlify.app/
+
+
+tela menu captador - https://tela-menu-captador.netlify.app/
+tela feedback - https://tela-feedback-captador.netlify.app/
+tela clientes- https://tela-clientes-captador.netlify.app/
+tela cadastro cliente https://tela-cadastro-cliente-captador.netlify.app/
+tela agenda https://tela-agenda-captador.netlify.app/
+tela intranet captador https://tela-intranet-captador.netlify.app/
+
+tela login - https://crm-casa-conceito.netlify.app/
+
+
+htthttp://localhost:8080/ - LINK INTRANET ADMIN
+http://localhost:3030/ - LINK INTRANET CAPTADOR
