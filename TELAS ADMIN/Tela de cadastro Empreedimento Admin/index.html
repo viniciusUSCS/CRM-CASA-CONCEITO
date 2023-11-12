@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastrar Empreedimento </title>
+    <!-- MATERIAS GOOGLE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- ESTILO DA PAGINA -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class ="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+
+                <div class="sidebar">
+                    <a href="https://tela-menu-admin.netlify.app/">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Menu Inicial</h3>
+                    </a>
+                    <a href="https://tela-clientes-admin.netlify.app/">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Clientes</h3>
+                    </a>
+                    <a href="https://tela-feedback-admin.netlify.app/">
+                        <span class="material-icons-sharp">feedback</span>
+                        <h3>Feedbacks</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3>Análises</h3>
+                    </a>
+                    <a href="http://localhost:8080/">
+                        <span class="material-icons-sharp">message</span>
+                        <h3>Intranet</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="https://tela-agenda-admin.netlify.app/">
+                        <span class="material-icons-sharp">calendar_month</span>
+                        <h3>Agenda</h3>
+                    </a>
+                    <a href="https://tela-cadastro-cliente-admin.netlify.app/">
+                        <span class="material-icons-sharp">how_to_reg</span>
+                        <h3>Cadastrar Cliente</h3>
+                    </a>
+                    <a href="https://tela-cadastro-funcionario-admin.netlify.app/">
+                        <span class="material-icons-sharp">group_add</span>
+                        <h3>Cadastrar Funcionario</h3>
+                    </a>
+                    <a href="https://tela-cadastro-empreendimento-admin.netlify.app/" class="active">
+                        <span class="material-icons-sharp">business</span>
+                        <h3>Cadastrar Empreedimento</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Configurações</h3>
+                    </a>
+                    <a href="https://tela-menu-admin.netlify.app/">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Sair</h3>
+                    </a>
+                </div>
+            </div>        
+        </aside>
+        <!-----------------------------FIM DA BARRA LATERAL ----------------------->
+        <main>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Ola, <b>Vinicius</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/foto-perfil.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------ FIM TOPO LOGIN E TEMA ---------------------->
+          <div class="cadastro"> 
+            <div class="container-cadastro">
+                <header>Cadastro de Empreedimento</header>
+        
+                <form action="#">
+                    <div class="form first">
+                        <div class="details ID">
+                            <span class="title">Dados</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Razão social</label>
+                                    <input type="text" placeholder="Escreva a razão social" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Data de fundação</label>
+                                    <input type="date" placeholder="Coloque a data de fundação" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>E-mail</label>
+                                    <input type="text" placeholder="Digite o E-mail" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Telefone</label>
+                                    <input type="number" placeholder="Ex: (11) 97979-2020" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>WhatsApp</label>
+                                    <input type="number" placeholder="Ex: (11) 8080-3030" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>É filial?</label>
+                                    <select required>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>CRT</label>
+                                    <select required>
+                                        <option disabled selected>Selecione qual a CRT</option>
+                                        <option>Simples Nacional</option>
+                                        <option>Regime normal</option>
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>E-mail notificações</label>
+                                    <input type="text" placeholder="Digite o e-mail de notificações" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="details ID">
+                            <span class="title">Dados</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>CNAE</label>
+                                    <input type="number" placeholder="Digite o CNAE" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>IEST</label>
+                                    <input type="text" placeholder="Digite o IEST" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Observações</label>
+                                    <input type="text" placeholder="Alguma observação?" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Apelido</label>
+                                    <input type="text" placeholder="Digite o apelido" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>CNPJ</label>
+                                    <input type="number" placeholder="Digite o CNPJ" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>N° Matriz</label>
+                                    <input type="number" placeholder="Digite N° da Matriz" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Chave do parcerio</label>
+                                    <input type="number" placeholder="Digite chave do parceiro" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Segmento</label>
+                                    <input type="number" placeholder="Digite o segmento" required>
+                                </div>
+                            </div>
+
+                            <div class="details ID">
+                                <span class="title">Dados de endereço</span>
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Tipo Logradouro</label>
+                                        <input type="text" placeholder="Digite o tipo do logradouro" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Endereço</label>
+                                        <input type="text" placeholder="Ex: Rua Conceição" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>Número</label>
+                                        <input type="number" placeholder="Número do logradouro" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>UF</label>
+                                        <input type="text" placeholder="Ex: SP" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>Bairro</label>
+                                        <input type="text" placeholder="Digite o bairro" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Complemento</label>
+                                        <input type="text" placeholder="Digite o complemento" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Cidade</label>
+                                        <input type="text" placeholder="Digite a cidade" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>CEP</label>
+                                        <input type="number" placeholder="Selecione a data de validade" required>
+                                    </div>
+                                </div>
+
+                                <div class="details ID">
+                                
+                                <button class="sumbit">
+                                    <span class="btnText">Cadastrar</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                        </div> 
+                    </div>      
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </div> 
+            
+        </main>
+    <!--------------------------FIM DO MENU ------------------------------->
+
+    
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
