@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro cliente </title>
+    <!-- MATERIAS GOOGLE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- ESTILO DA PAGINA -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class ="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+
+                <div class="sidebar">
+                    <a href="https://tela-menu-captador.netlify.app/">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Menu Inicial</h3>
+                    </a>
+                    <a href="https://tela-clientes-captador.netlify.app/">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Clientes</h3>
+                    </a>
+                    <a href="https://tela-feedback-captador.netlify.app/">
+                        <span class="material-icons-sharp">feedback</span>
+                        <h3>Feedbacks</h3>
+                    </a>
+                    <a href="http://localhost:3030/">
+                        <span class="material-icons-sharp">message</span>
+                        <h3>Intranet</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="https://tela-agenda-captador.netlify.app/">
+                        <span class="material-icons-sharp">calendar_month</span>
+                        <h3>Agenda</h3>
+                    </a>
+                    <a href="https://tela-cadastro-cliente-captador.netlify.app/" class="active">
+                        <span class="material-icons-sharp">how_to_reg</span>
+                        <h3>Cadastrar Cliente</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Configurações</h3>
+                    </a>
+                    <a href="https://crm-casa-conceito.netlify.app/">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Sair</h3>
+                    </a>
+                </div>
+            </div>        
+        </aside>
+        <!-----------------------------FIM DA BARRA LATERAL ----------------------->
+        <main>
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Ola, <b>Vinicius</b></p>
+                            <small class="text-muted">Captador</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/foto-perfil.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------ FIM TOPO LOGIN E TEMA ---------------------->
+          <div class="cadastro"> 
+            <div class="container-cadastro">
+                <header>Cadastro de cliente</header>
+        
+                <form action="#">
+                    <div class="form first">
+                        <div class="details ID">
+                            <span class="title">Dados pessoais</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Nome completo:</label>
+                                    <input type="text" placeholder="Escreva o nome" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Data de nascimento</label>
+                                    <input type="date" placeholder="Coloque a data de nascimento" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>E-mail</label>
+                                    <input type="text" placeholder="Digite o E-mail" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Numero celular</label>
+                                    <input type="number" placeholder="Ex: (11) 97979-2020" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Telefone</label>
+                                    <input type="number" placeholder="Ex: (11) 8080-3030" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Tipo de cliente</label>
+                                    <select required>
+                                        <option disabled selected>Selecione o tipo de cliente</option>
+                                        <option>Prospecção</option>
+                                        <option>Normal</option>
+                                        <option>Bloqueado</option>
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Gênero</label>
+                                    <select required>
+                                        <option disabled selected>Selecione o gênero</option>
+                                        <option>Homem</option>
+                                        <option>Mulher</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Cargo</label>
+                                    <input type="text" placeholder="Digite a função do cliente" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="details ID">
+                            <span class="title">Dados de identidade</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>RG</label>
+                                    <input type="number" placeholder="Digite o RG" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Órgão Expedidor</label>
+                                    <input type="text" placeholder="Digite o órgão Expedidor" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Data expedição</label>
+                                    <input type="date" placeholder="Enter expiry date" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>UF</label>
+                                    <input type="text" placeholder="Ex: SP" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>CPF</label>
+                                    <input type="number" placeholder="Digite o CPF" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Titulo de eleitor</label>
+                                    <input type="number" placeholder="Digite o titulo de eleitor" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Carteira de habilitação</label>
+                                    <input type="number" placeholder="Digite o Nº da Carteira de habilitação" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Data de validade</label>
+                                    <input type="date" placeholder="Selecione a data de validade" required>
+                                </div>
+                            </div>
+
+                            <div class="details ID">
+                                <span class="title">Dados de endereço</span>
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Tipo Logradouro</label>
+                                        <input type="text" placeholder="Digite o tipo do logradouro" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Endereço</label>
+                                        <input type="text" placeholder="Ex: Rua Conceição" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>Número</label>
+                                        <input type="number" placeholder="Número do logradouro" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>UF</label>
+                                        <input type="text" placeholder="Ex: SP" required>
+                                    </div>
+    
+                                    <div class="input-field">
+                                        <label>Bairro</label>
+                                        <input type="text" placeholder="Digite o bairro" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Complemento</label>
+                                        <input type="text" placeholder="Digite o complemento" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Cidade</label>
+                                        <input type="text" placeholder="Digite a cidade" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>CEP</label>
+                                        <input type="number" placeholder="Selecione a data de validade" required>
+                                    </div>
+                                </div>
+
+                                <div class="details ID">
+                                    <span class="title">Feedback</span>
+                
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Digite o feedback do cliente</label>
+                                            <textarea name="feedback" class="input" cols="40" rows="10" placeholder="Ex: Cliente gostou da oferta"></textarea>
+                                        </div>
+                                    </div>
+
+                                <button class="sumbit">
+                                    <span class="btnText">Cadastrar</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                        </div> 
+                    </div>      
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </div> 
+            
+        </main>
+    <!--------------------------FIM DO MENU ------------------------------->
+
+    
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
